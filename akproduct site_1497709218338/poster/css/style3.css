@@ -1,0 +1,59 @@
+.row .lab_columnheight{
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.peach-overlay{
+  background-color: rgba(221, 139, 120, 0.8);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition:opacity 1s;
+}
+
+.lab_columnheight:hover .peach-overlay{
+
+  opacity: 1;
+}
+
+
+.peach-overlay::before{
+
+  content: "";
+  border-top: 1px solid #fff;
+  border-bottom:1px solid #fff;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  bottom: 20px;
+  left: 30px;
+  transform: scale(0,1); 
+  transition:transform  1s;
+  text-align: center;
+  font-family: freestyle script;
+  
+}
+
+.lab_columnheight:hover .peach-overlay::before{
+  transform: scale(1,1);
+}
+.peach-overlay::after{
+
+  content: "";
+  border-left: 1px solid #fff;
+  border-right:1px solid #fff;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  bottom: 20px;
+  left: 30px;
+  transform: scale(1,0); 
+  transition:transform  1s;
+}
+
+.lab_columnheight:hover .peach-overlay::after{
+  transform: scale(1,1);
+}
+

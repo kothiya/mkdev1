@@ -1,0 +1,30 @@
+body{
+	margin: 0;
+	padding: 0;
+	background:#262626;
+}
+.skewedBox{
+	background: #edff57;
+	padding: 50px 0;
+	transform: skew(0deg , -10deg) translateY(-315px);
+}
+.skewedBox .container{
+	padding: 60px 50px;
+	transform: skew(0deg , 10deg);
+	
+}
+
+
+.sec2{
+	padding:0px 80px 50px;
+	color: #fff;
+	font-family: arial;
+	text-align: center;
+}
+.skewedBox .container .row .col-md-3 img:hover{
+	transform: scale(1.15);
+	transition: 2s;
+	
+	transform: rotate(360deg) scale(1.15);
+	transition: 2s;
+}
